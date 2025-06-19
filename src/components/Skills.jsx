@@ -71,25 +71,30 @@ function Skills() {
             logo: '/postman.webp',
             title: 'Postman',
             description: 'API development environment for building, testing, and documenting APIs.',
-        }
-    ]
+        },
+    ];
 
     return (
-        <section id="skills" className="rounded-xl  select-none py-12 bg-gray-100 dark:bg-gradient-to-r dark:from-blue-700 dark:to-yellow-900 shadow-[0_0_20px_2px_rgba(0,0,0,0.3)]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-center justify-center">
-                <h2 className="text-3xl font-bold text-center text-secondary-900 dark:text-white mb-8 font-[Outfit]">Skills</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-fit">
+        <section id="skills"
+                 className="rounded-xl select-none py-8 sm:py-10 md:py-12 lg:py-16 bg-gray-100 dark:bg-gradient-to-r dark:from-blue-700 dark:to-yellow-900 shadow-[0_0_20px_2px_rgba(0,0,0,0.3)]">
+            <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-secondary-900 dark:text-white mb-4 sm:mb-6 md:mb-8 font-[Outfit]">
+                    Skills
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-4 max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto">
                     {skills.map((skill) => (
                         <div key={skill.id}
-                             className="bg-white dark:bg-transparent pl-6 pr-4 py-3 flex flex-row rounded-lg shadow-[0_0_20px_2px_rgba(0,0,0,0.3)] items-center justify-between hover:scale-105 transition-all duration-100">
-                            <div>
-                                <img src={skill.logo} alt={`${skill.title} logo`} className="h-auto w-20" />
+                             className="bg-white dark:bg-transparent px-4 py-4 sm:px-6 sm:py-3 md:px-6 md:py-4 flex flex-row items-center justify-between rounded-lg shadow-[0_0_20px_2px_rgba(0,0,0,0.3)] hover:scale-[1.03] transition-all duration-150">
+                            <div className="flex-shrink-0">
+                                <img src={skill.logo}
+                                     alt={`${skill.title} logo`}
+                                     className="h-12 sm:h-10 md:h-12 max-w-10 w-auto object-contain" />
                             </div>
-                            <div className="text-left items-center ml-4 justify-center font-[Poppins]">
-                                <h3 className="text-lg font-semibold text-white">
+                            <div className="ml-4 sm:ml-6 flex-1 text-left font-[Poppins]">
+                                <h3 className="text-base sm:text-lg md:text-xl font-semibold text-secondary-900 dark:text-white">
                                     {skill.title}
                                 </h3>
-                                <p className="text-secondary-700 dark:text-secondary-300 text-gray-400 text-sm">
+                                <p className="text-sm sm:text-base text-secondary-700 dark:text-secondary-300 text-gray-400 mt-1">
                                     {skill.description}
                                 </p>
                             </div>

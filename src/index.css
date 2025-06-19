@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id], div[id="home"] {
+    scroll-margin-top: 3.5rem; /* Matches pt-14 in App.jsx */
+}
