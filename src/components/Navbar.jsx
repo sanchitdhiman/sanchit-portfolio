@@ -25,7 +25,7 @@ function Navbar() {
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo Section */}
                 <div className="flex items-center space-x-2 ml-1 sm:ml-2">
-                    <img src="/icon-no-bg.png" alt="Logo" className="h-10 w-auto select-none" />
+                    <img src="/sanchit-portfolio/icon-no-bg.png" alt="Logo" className="h-10 w-auto select-none" />
                     <div className="text-2xl font-[Inter] font-semibold select-none">Sanchit Dhiman</div>
                 </div>
 
